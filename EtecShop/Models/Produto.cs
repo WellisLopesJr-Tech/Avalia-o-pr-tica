@@ -25,6 +25,10 @@ public class Produto
 
     [Display(Name = "Qtde. Estoque")]
     [Required(ErrorMessage = "Informe a Categoria")]
+    public int Estoque { get; set; }
+
+    [Display(Name = "Categoria")]
+    [Required(ErrorMessage = "Informe a Categoria")]
     public int CategoriaId { get; set; }
     [ForeignKey("CategoriaId")]
     public Categoria Categoria { get; set; }
